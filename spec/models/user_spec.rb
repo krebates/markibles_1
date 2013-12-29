@@ -7,6 +7,6 @@ describe User do
   it { should validate_presence_of :first_name }
   it { should validate_presence_of :last_name }
   it { should validate_presence_of :dob }
-  it { should belong_to :rating }
-  it { should belong_to :seller }
+  it { should have_many :ratings }
+  it { should have_one :seller }
 end
