@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'shoulda-matchers'
+
 gem 'rspec-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
