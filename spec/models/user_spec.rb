@@ -8,11 +8,8 @@ describe User do
   it { should validate_presence_of :dob }
   it { should have_many :ratings }
   it { should have_one :seller }
-
-  it 'should be unique' do
-    FactoryGirl.create(:user)
-    inquiry1 = FactoryGirl.build(:user)
-    expect(inquiry1).to_not be_valid
-
+  context "uniqueness" do
+    before :each
+    it { should validate_uniqueness_of :username }
   end
 end
