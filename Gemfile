@@ -4,6 +4,7 @@ group :test, :development do
     gem 'factory_girl_rails'
     gem 'shoulda-matchers'
     gem 'capybara'
+    gem 'launchy'
     gem 'rspec-rails'
     gem 'valid_attribute'
     gem 'pry-rails'
