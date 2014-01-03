@@ -5,7 +5,7 @@ Markibles1::Application.routes.draw do
   # resources :sellers
 
 
-  root to:'users#index'
+  root 'users#index'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

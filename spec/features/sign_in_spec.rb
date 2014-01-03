@@ -26,6 +26,7 @@ feature 'signs up', %Q{
     fill_in 'Password Confirmation', with: 'password'
 
     click_button 'Sign Up'
+    # save_and_open_page
 
     expect(page).to have_content("You're In!")
     save_and_open_page
