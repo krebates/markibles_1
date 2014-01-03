@@ -1,10 +1,12 @@
 Markibles1::Application.routes.draw do
-  resources :products
-  resources :ratings
-  resources :sellers
-  resources :users
+  devise_for :users
+  # resources :products
+  # resources :ratings
+  # resources :sellers
 
-  root to: "products#index"
+
+  root to:'users#index'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
