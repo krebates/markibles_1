@@ -18,18 +18,22 @@ feature 'signs up', %Q{
 
     click_link 'Sign Up'
 
+    fill_in 'Username', with: 'catdog'
     fill_in 'First Name', with: 'Krystle'
     fill_in 'Last Name', with: 'Bates'
     fill_in 'Email', with: 'user@example.com'
-    fill_in 'user_password', with: 'password'
+    save_and_open_page
+
+    within("#user_password") do
+      fill_in 'Password', with: 'password'
+    end
 
     fill_in 'Password Confirmation', with: 'password'
 
     click_button 'Sign Up'
-    # save_and_open_page
 
     expect(page).to have_content("You're In!")
-    save_and_open_page
+
     expect(page).to have_content("Sign Out")
   end
 
