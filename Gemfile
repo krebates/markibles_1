@@ -1,8 +1,24 @@
 source 'https://rubygems.org'
 
-gem 'shoulda-matchers'
+group :test, :development do
+    gem 'factory_girl_rails'
+    gem 'shoulda-matchers'
+    gem 'capybara'
+    gem 'launchy'
+    gem 'rspec-rails'
+    gem 'valid_attribute'
+    gem 'pry-rails'
+    gem 'dotenv'
+  end
 
-gem 'rspec-rails'
+  group :development do
+    gem 'quiet_assets'
+  end
+
+gem 'simple_form'
+
+gem 'devise'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
