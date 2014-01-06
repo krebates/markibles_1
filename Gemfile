@@ -9,6 +9,7 @@ group :test, :development do
     gem 'valid_attribute'
     gem 'pry-rails'
     gem 'dotenv'
+    gem 'dotenv-rails'
   end
 
   group :development do
