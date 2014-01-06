@@ -17,6 +17,7 @@ group :test, :development do
 
   group :production do
     gem 'rails_12factor'
+    gem 'dotenv-rails'
   end
 
 gem 'simple_form'
