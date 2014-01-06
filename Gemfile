@@ -15,6 +15,10 @@ group :test, :development do
     gem 'quiet_assets'
   end
 
+  group :production do
+    gem 'rails_12factor'
+  end
+
 gem 'simple_form'
 
 gem 'devise'
