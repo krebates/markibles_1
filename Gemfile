@@ -8,7 +8,6 @@ group :test, :development do
     gem 'rspec-rails'
     gem 'valid_attribute'
     gem 'pry-rails'
-    gem 'dotenv'
     gem 'dotenv-rails'
   end
 
@@ -18,6 +17,7 @@ group :test, :development do
 
   group :production do
     gem 'rails_12factor'
+    gem 'dotenv-rails'
   end
 
 gem 'simple_form'
