@@ -53,7 +53,7 @@ ActiveRecord::Schema.define(version: 20140106234842) do
 
   create_table "sellers", force: true do |t|
     t.string   "store_website"
-    t.string   "name"
+    t.string   "name",          null: false
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
