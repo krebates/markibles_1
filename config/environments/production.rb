@@ -1,4 +1,14 @@
 Markibles1::Application.configure do
+
+  ActionMailer::Base.smtp_settings = {
+  :address        => 'smtp.sendgrid.net',
+  :port           => '587',
+  :authentication => :plain,
+  :user_name      => ENV['app21013935@heroku.com'],
+  :password       => ENV['sazxzqb0'],
+  :domain         => 'heroku.com',
+  :enable_starttls_auto => true
+}
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.

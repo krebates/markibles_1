@@ -8,22 +8,23 @@ group :test, :development do
     gem 'rspec-rails'
     gem 'valid_attribute'
     gem 'pry-rails'
-    gem 'dotenv-rails'
+
   end
 
   group :development do
     gem 'quiet_assets'
+    gem 'mailcatcher'
   end
 
   group :production do
     gem 'rails_12factor'
-    gem 'dotenv-rails'
   end
 
 gem 'simple_form'
 
 gem 'devise'
 
+gem 'dotenv-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
