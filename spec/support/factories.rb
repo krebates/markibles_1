@@ -12,4 +12,8 @@ FactoryGirl.define do
     name 'cake'
   end
 
+  factory :seller do
+    store_website "www.bakersite.com"
+    name "Baker's Name"
+  end
 end
