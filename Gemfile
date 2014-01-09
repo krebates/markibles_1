@@ -8,7 +8,6 @@ group :test, :development do
     gem 'rspec-rails'
     gem 'valid_attribute'
     gem 'pry-rails'
-
   end
 
   group :development do
@@ -25,6 +24,8 @@ gem 'simple_form'
 gem 'devise'
 
 gem 'dotenv-rails'
+
+gem 'foundation-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
