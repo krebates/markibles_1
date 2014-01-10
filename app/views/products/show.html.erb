@@ -1,0 +1,13 @@
+<h1><%= link_to "Create a Product", new_product_path %> <br/></h1> <hr>
+
+<%= @product.name %>
+<%= @product.photo %>
+<%= @product.description %>
+<%= @product.price %>
+<%= @product.category.name %>
+</p>
+
+<%= link_to "Delete information", product_path(@product), data: { confirm: "Are you sure?" }, method: :delete %>
+  <%= link_to "Edit information", edit_product_path(@product) %>
+  <%= link_to "Show store", edit_product_path(@product) %><br/><br/>
+  <hr>

@@ -4,5 +4,6 @@
   <%= f.input :photo %>
   <%= f.input :description %>
   <%= f.input :price %>
+  <%= f.association :category, prompt: "Choose a Category" %>
   <%= f.submit 'Add food item.' %>
 <% end %>

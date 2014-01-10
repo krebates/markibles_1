@@ -1,5 +1,10 @@
 class CategoriesController < ApplicationController
 
+  ## get the current_user
+  ## check in the edit action that the store id is
+  ## the same as the current_users store id
+  ## if it is they can edit
+
   def index
     @categories = Category.all
   end

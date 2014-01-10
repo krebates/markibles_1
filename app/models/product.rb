@@ -5,4 +5,5 @@ class Product < ActiveRecord::Base
   has_many :ratings, as: :ratable
   belongs_to :seller
   validates_numericality_of :price
+  belongs_to :category
 end

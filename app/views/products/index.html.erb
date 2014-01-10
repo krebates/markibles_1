@@ -1,5 +1,17 @@
-<%= link_to "Add a food item",
-  new_building_path %> <br/><hr>
+<%= link_to "Add a food item", new_product_path %> <br/><hr>
+<h2><dl>
+  <% @products.each do |product| %>
+    Product <%= link_to "#{product.name}", product_path(product) %><br/><br/>
+    <%= product.photo %><br/><br/>
+    Description <%= product.description %><br/><br/>
+    Price <%= product.price %><br/><br/>
+    Product <%= product.category.name if product.category%>
+</h2></dl>
 
-<% @products.each do || %>
+  <%= link_to "Delete information", product_path(product), data: { confirm: "Are you sure?" }, method: :delete %>
+  <%= link_to "Edit information", edit_product_path(product) %>
+  <%= link_to "Show store", edit_product_path(product) %><br/><br/>
+  <hr>
+
+<% end %>
 

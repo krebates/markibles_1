@@ -4,9 +4,6 @@ class UsersController < ApplicationController
     @users = User.all
   end
 
-
-
-
 private
 
   def user_params

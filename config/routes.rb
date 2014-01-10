@@ -2,10 +2,10 @@ Markibles1::Application.routes.draw do
   devise_for :users
   # resources :products
   # resources :ratings
-  # resources :sellers
 
 
-  root 'users#index'
+
+  root 'welcome#index'
 
   resources :messages
 
@@ -14,6 +14,8 @@ Markibles1::Application.routes.draw do
   resources :products
 
   resources :categories
+
+  resources :sellers
 
 
   # The priority is based upon order of creation: first created -> highest priority.
