@@ -6,4 +6,6 @@ class Product < ActiveRecord::Base
   belongs_to :seller
   validates_numericality_of :price
   belongs_to :category
+
+  mount_uploader :food_photo, FoodPhotoUploader
 end

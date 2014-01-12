@@ -27,6 +27,8 @@ gem 'dotenv-rails'
 
 gem 'foundation-rails'
 
+gem 'carrierwave'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 

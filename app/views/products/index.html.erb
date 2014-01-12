@@ -2,7 +2,7 @@
 <h2><dl>
   <% @products.each do |product| %>
     Product <%= link_to "#{product.name}", product_path(product) %><br/><br/>
-    <%= product.photo %><br/><br/>
+    <%= product.food_photo %><br/><br/>
     Description <%= product.description %><br/><br/>
     Price <%= product.price %><br/><br/>
     Product <%= product.category.name if product.category%>
