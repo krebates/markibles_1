@@ -25,7 +25,7 @@ feature 'signs up', %Q{
       fill_in 'user_password', with: 'words12345'
       fill_in 'Password Confirmation', with: 'words12345'
 
-      click_button 'Sign Up'
+      click_link 'Sign Up'
     # end
 
     expect(page).to have_content("You're In!")

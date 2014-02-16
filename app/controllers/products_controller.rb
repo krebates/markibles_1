@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
 
-  # before_action :authorize_user, only: [:new, :create]
+  before_action :authorize_user, only: [:new, :create]
 
   def index
     @products = Product.all
@@ -15,7 +15,7 @@ class ProductsController < ApplicationController
   end
 
   def create
-    # if is_seller?
+    if is_seller?
     @product = Product.new(product_params)
     @product.seller = current_user.seller
       if @product.save
@@ -24,7 +24,7 @@ class ProductsController < ApplicationController
       else
         render :new
       end
-    # end
+    end
   end
 
   def edit
@@ -52,8 +52,8 @@ private
     params.require(:product).permit(:name, :food_photo, :description, :category_id, :seller_id, :price)
   end
 
-  # def is_seller?
-  #   current_user.id == @seller
-  # end
+  def is_seller?
+    current_user.id == @seller
+  end
 end
 
